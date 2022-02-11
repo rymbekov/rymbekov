@@ -21,16 +21,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           svg_out_path: dist/snake-animation.svg
 
-      - name: Import GPG key
-        uses: crazy-max/ghaction-import-gpg@v3
-        with:
-          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          git-user-signingkey: true
-          git-commit-gpgsign: true
-
       - name: Push snake-animation.svg to the output branch
-        if: success()
         uses: crazy-max/ghaction-github-pages@v2.6.0
         with:
           target_branch: animation-output
