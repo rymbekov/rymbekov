@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+![Snake](https://raw.githubusercontent.com/rymbekov/rymbekov/animation-output/snake-animation.svg)
+
 <!--
 **rymbekov/rymbekov** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
